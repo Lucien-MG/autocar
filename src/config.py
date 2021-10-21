@@ -3,8 +3,8 @@
 config = {
 
     'car': {
-        'module': 'donkey_simulation',
-        'constructor': 'DonkeySimulation',
+        'module': 'donkey_pi',
+        'constructor': 'DonkeyPi',
         'config': {
             "host": "127.0.0.1",
             "port": 9091
@@ -26,7 +26,7 @@ config = {
         'module': 'keras_policy',
         'constructor': 'KerasPolicy',
         'config': {
-            "path": "../../models_trained/nvidia_model",
+            "path": "./model",
         }
     },
 
@@ -34,7 +34,7 @@ config = {
         'module': 'pillow_recorder',
         'constructor': 'PillowRecorder',
         'config': {
-            "path": "../../data/generated_track_2",
+            "path": "./data",
             "format": "png"
         }
     },
