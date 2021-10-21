@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from car.car_interface import CarInterface 
-from car.driver.donkey_mono_pi import SimClient
+# from car.driver.donkey_mono_pi import SimClient
 
 class DonkeyPi(CarInterface):
     def __init__(self, state, config):
