@@ -12,7 +12,8 @@ class UdpCommunication(CommunicationInterface):
         self.udp_server = UdpServer(self.config, self.state)
 
     def send_data(self):
-        self.udp_server.send_msg(self.state['data'])
+        # self.udp_server.send_msg(self.state['data'])
+        self.udp_server.send_msg({"image": "test"})
 
     def stop(self):
         self.udp_server.close()

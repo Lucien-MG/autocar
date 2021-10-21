@@ -15,20 +15,20 @@ config = {
         'module': 'udp',
         'constructor': 'UdpCommunication',
         'config': {
-            "host_server": "127.0.0.1",
+            "host_server": "192.168.43.73",
             "port_server": 9196,
-            "host_client": "127.0.0.1",
+            "host_client": "192.168.43.218",
             "port_client": 9195,
         }
     },
 
-    'policy': {
-        'module': 'keras_policy',
-        'constructor': 'KerasPolicy',
-        'config': {
-            "path": "./model",
-        }
-    },
+    #'policy': {
+    #    'module': 'keras_policy',
+    #    'constructor': 'KerasPolicy',
+    #    'config': {
+    #        "path": "./model",
+    #    }
+    #},
 
     'recorder': {
         'module': 'pillow_recorder',
